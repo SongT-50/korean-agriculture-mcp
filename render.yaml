@@ -1,14 +1,13 @@
 services:
   - type: web
     name: korean-agriculture-mcp
-    runtime: python
-    buildCommand: pip install -r requirements.txt
-    startCommand: python server.py
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    plan: free
     envVars:
       - key: DATA_GO_KR_API_KEY
         sync: false
-      - key: MCP_TRANSPORT
-        value: sse
       - key: PORT
         value: "8000"
-    plan: free
+      - key: MCP_TRANSPORT
+        value: "streamable-http"
