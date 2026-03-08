@@ -4,6 +4,10 @@
 
 Real-time auction prices from 32+ public wholesale markets across South Korea, powered by [data.go.kr](https://data.go.kr) Open API.
 
+<a href="https://glama.ai/mcp/servers/SongT-50/korean-agriculture-mcp">
+  <img width="380" height="200" src="https://glama.ai/mcp/servers/SongT-50/korean-agriculture-mcp/badge" alt="korean-agriculture-mcp MCP server" />
+</a>
+
 ## Tools (6)
 
 | Tool | Description |
