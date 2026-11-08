@@ -42,7 +42,9 @@ cp .env.example .env
 python server.py
 
 # Run (SSE mode for remote access)
-MCP_TRANSPORT=sse PORT=8000 python server.py
+# allowed_hosts defaults to the Render hostname — for local runs, set MCP_ALLOWED_HOSTS
+# to match the Host header your client sends (e.g. localhost:8000), or requests are rejected.
+MCP_ALLOWED_HOSTS=localhost:8000 MCP_TRANSPORT=sse PORT=8000 python server.py
 ```
 
 ## API Key
